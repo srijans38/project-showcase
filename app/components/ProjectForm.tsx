@@ -34,7 +34,7 @@ export default function ProjectForm({
         type="text"
         id="title"
         defaultValue={defaultTitle}
-        className={`w-1/3 rounded-md ${
+        className={`w-full sm:w-3/4 lg:w-1/2 xl:w-1/3 rounded-md ${
           errors.title ? 'bg-red-800' : 'bg-gray-700'
         } focus:outline-none focus:ring-1 focus:ring-offset-1 focus:ring-offset-transparent`}
         {...register('title', { required: true, minLength: 1 })}
@@ -51,7 +51,7 @@ export default function ProjectForm({
         defaultValue={defaultDescription}
         className={`rounded-md ${
           errors.description ? 'bg-red-800' : 'bg-gray-700'
-        } focus:outline-none w-1/3 focus:ring-1 focus:ring-offset-1 focus:ring-offset-transparent`}
+        } focus:outline-none w-full sm:w-3/4 lg:w-1/2 xl:w-1/3 focus:ring-1 focus:ring-offset-1 focus:ring-offset-transparent`}
         {...register('description', { required: true, minLength: 150 })}
       />
       {errors.description && (
