@@ -16,6 +16,8 @@
   - Both create and edit pages use the same form component
   - Edit page has the form pre-filled
 
+- Dummy lorem ipsum data and stock images are used as the initial state for the Redux store
+
 ### Built With
 
 - Next.js 12
