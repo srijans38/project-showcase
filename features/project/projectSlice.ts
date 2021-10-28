@@ -17,9 +17,11 @@ const projectSlice = createSlice({
       reducer: (state, action: PayloadAction<IProject>) => {
         state.push(action.payload);
       },
+      //used prepare to inject uuid in the payload
       prepare: ({ title, description }: IProjectPayload) => {
         return {
           payload: {
+            //unique ids for every project
             id: uuidv4(),
             title,
             description,

@@ -7,7 +7,7 @@ interface ILayoutProps {
 
 export default function Layout({ children }: ILayoutProps) {
   return (
-    <div className="text-gray-100 max-w-5xl mx-auto mt-6 px-4 xl:px-0">
+    <div className="text-gray-100 max-w-6xl mx-auto mt-6 px-4 xl:px-0">
       <nav>
         <h1 className="text-3xl">
           <Link href="/">
